@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Music Player</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<!-- Player -->
+		<main class="player">
+			<!-- Title -->
+			<h1 class="title" id="title"></h1>
+
+			<!-- Cover -->
+			<img src="" alt="" class="cover" id="cover" />
+
+			<!-- Audio HTML Media Element -->
+			<audio src="" id="audio"></audio>
+
+			<!-- Progress bar -->
+			<div id="progress-container" class="progress-container">
+				<section class="progress" id="progress"></section>
+			</div>
+
+			<!-- Controls -->
+			<section class="controls">
+				<button class="prev">
+					<i class="fa fa-backward" id="prev"></i>
+				</button>
+				<button class="play">
+					<i class="fa fa-play" id="play"></i>
+				</button>
+				<button class="next">
+					<i class="fa fa-forward" id="next"></i>
+				</button>
+			</section>
+
+			<!-- Song List -->
+			<ul class="songs" id="songs">
+				<!-- <li><a href="#">song 1</a></li>
+				<li><a href="#">song 2</a></li>
+				<li><a href="#">song 3</a></li> -->
+			</ul>
+		</main>
+		<script src="scripts/script.js"></script>
+	</body>
+</html>

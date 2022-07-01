@@ -1,0 +1,75 @@
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: "Roboto", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+#store-container {
+	padding: 20px;
+	display: flex;
+	gap: 10px;
+}
+
+#store-container .item {
+	padding: 20px;
+	border: thin solid #ccc;
+	border-radius: 5px;
+}
+
+#shopping-cart-container {
+	width: 400px;
+	position: absolute;
+	right: 0;
+	padding: 10px;
+	border: thin solid #ccc;
+	background-color: #fff;
+}
+
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+.item .title {
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #09dceb;
+}
+
+.item .price {
+	color: #06eb47;
+	font-weight: bold;
+}
+
+.item div {
+	padding: 5px 0;
+}
+
+.total {
+	padding: 20px 0;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #323332;
+}
+
+button {
+	background-color: #f1d91c;
+	color: #fff;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.2em;
+	font-weight: bold;
+	cursor: pointer;
+}
