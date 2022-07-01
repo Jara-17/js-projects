@@ -1,0 +1,43 @@
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+#app {
+	width: 100%;
+	margin: 5rem auto;
+}
+
+#player {
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.board {
+	display: flex;
+	flex-direction: column;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+}
+
+.cell {
+	width: 200px;
+	height: 200px;
+	font-size: 4rem;
+	border: thin solid black;
+	font-weight: bold;
+	color: #cc1bef;
+}
