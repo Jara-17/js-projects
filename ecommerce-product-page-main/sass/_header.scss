@@ -1,0 +1,85 @@
+@use "variables";
+
+.header {
+  // border: solid thin red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  padding: 0 24px;
+
+  @media (min-width: 1115px) {
+    height: 112px;
+    border-bottom: thin solid variables.$Grayish-blue;
+  }
+
+  &__navigation {
+    // border: solid thin red;
+    width: 175px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: 1115px) {
+      width: 590px;
+    }
+  }
+
+  &__menu {
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media (min-width: 1115px) {
+      display: none;
+    }
+  }
+
+  &__cart-avatar {
+    // border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70px;
+
+    @media (min-width: 1115px) {
+      width: 125px;
+    }
+  }
+
+  &__cart {
+    position: relative;
+    &--notification {
+      display: none;
+      width: 15px;
+      background-color: variables.$Orange;
+      height: 12px;
+      border-radius: 16px;
+      position: absolute;
+      top: -2;
+      right: -5px;
+      font-size: 0.6rem;
+      text-align: center;
+      color: variables.$White;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__avatar {
+    width: 24px;
+
+    @media (min-width: 1115px) {
+      width: 48px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      border: 2px solid variables.$Orange;
+      border-radius: 50%;
+    }
+  }
+}
